@@ -1,0 +1,28 @@
+# Core LLM & Agent framework
+langgraph>=0.2.0
+langchain>=0.3.0
+langchain-openai>=0.1.0
+langchain-core>=0.3.0
+
+# Observability & Tracing
+langsmith>=0.1.0
+
+# HTTP client (async)
+httpx>=0.27.0
+
+# Configuration & Validation
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+
+# Token counting
+tiktoken>=0.7.0
+
+# UI
+streamlit>=1.35.0
+
+# Testing
+pytest>=8.2.0
+pytest-asyncio>=0.23.0
+
+# Evaluation
+python-dotenv>=1.0.0
