@@ -122,8 +122,14 @@ for msg in st.session_state.chat_history:
         st.markdown(msg["content"])
 
 
-# Chat input & agent trigger
-if prompt := st.chat_input("Ask about any country..."):
+# Limit to 15 messages to prevent exhausting API credits
+user_msg_count = sum(1 for m in st.session_state.chat_history if m["role"] == "user")
+
+if user_msg_count >= 15:
+    st.warning("🛑 You have reached the limit of 15 messages for this session. Please click **Clear Conversation** in the sidebar to start a new session.")
+    # Show a disabled chat input
+    st.chat_input("Message limit reached.", disabled=True)
+elif prompt := st.chat_input("Ask about any country..."):
     # Show user message
     st.session_state.chat_history.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
