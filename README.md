@@ -9,12 +9,16 @@ This project implements a scalable AI workflow strictly following the requiremen
 
 ---
 
-## 🚀 Deliverables
+## 🚀 Project Links
 
-- 🔗 **Live Demo**: [Insert Streamlit Cloud / HuggingFace Spaces Link Here]
-- 📺 **Video Walkthrough**: [Insert Loom / YouTube Link Here]
+- **Live App:**  
+  https://country-infor-ai-zredfn6kugrw5ah7vptodi.streamlit.app/
 
----
+- **Demo Video (Loom):**  
+  https://www.loom.com/share/903a33d5b39141ae889725b489b6f255
+
+- **GitHub Repository:**  
+  https://github.com/Ajjukotaprivate/country-infor-ai
 
 ## Architecture
 
